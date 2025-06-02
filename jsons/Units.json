@@ -52,7 +52,6 @@
 		"requiredTech": "Steel",
 		"upgradesTo": "Musketman",
 		"obsoleteTech": "Gunpowder",
-		"requiredResource": "Iron",
 		"attackSound": "metalhit"
 	},
 	{
@@ -73,6 +72,7 @@
 		"name": "Celere",
 		"unitType": "Mounted",
 		"uniqueTo": "Rome",
+		"replaces": "Chariot Archer",
 		"movement": 4,
 		"strength": 6,
 		"cost": 50,
@@ -113,5 +113,72 @@
 		"uniques": ["Unbuildable", "[+50]% Gold cost of upgrading"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
+	},
+	{
+		"name": "Auxilia Archer",
+		"unitType": "Archery",
+		"uniqueTo": "Rome",
+		"replaces": "Archer",
+		"movement": 3,
+		"strength": 4,
+		"rangedStrength": 6,
+		"cost": 45,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Construction",
+		"upgradesTo": "Composite Bowman",
+		"uniques": ["Unbuildable", "[+50]% Gold cost of upgrading"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Auxilia Bowman",
+		"unitType": "Archery",
+		"uniqueTo": "Rome",
+		"replaces": "Composite Bowman",
+		"movement": 3,
+		"strength": 6,
+		"rangedStrength": 12,
+		"cost": 85,
+		"requiredTech": "Construction",
+		"obsoleteTech": "Machinery",
+		"upgradesTo": "Crossbowman",
+		"uniques": ["Unbuildable", "[+50]% Gold cost of upgrading"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Roman Trireme",
+		"unitType": "Melee Water",
+		"uniqueTo": "Rome",
+		"replaces": "Trireme",
+		"movement": 4,
+		"strength": 10,
+		"cost": 40,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles", "Can carry [3] [Land] units"],
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": " Roman Quinquereme",
+		"unitType": "Ranged Water",
+		"uniqueTo": "Rome",
+		"movement": 3,
+		"strength": 15,
+		"rangedStrength": 10,
+		"cost": 55,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles", "Can carry [5] [Land] units"],
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Merchant Vessel",
+		"unitType": "Civilian Water",
+		"movement": 3,
+		"cost": 300,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>",
+			"Can undertake a trade mission with City-State, giving a large sum of gold and [15] Influence"]
 	},
 ]
