@@ -1,25 +1,47 @@
 [
 	{
-		"name": "Holodeck",
-		"replaces": "Circus Maximus",
-		"uniqueTo": "Aliens",
-		"cost": 480,
-		"happiness": 12,
-		"culture": 12,
-		"science": 12,
-		"maintenance": 96,
-		"isNationalWonder": true,
-		"requiredBuildingInAllCities": "Colosseum",
+		"name": "Forum",
+		"replaces": "Market",
+		"uniqueTo": "Rome",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"gold": 25},
+		"uniques": ["[+15]% Great Person generation [in this city]"]
+		"requiredTech": "Currency"
+	},
+	{
+		"name": "Bathhouse",
+		"replaces": "Garden",
+		"uniqueTo": "Rome",
+		"uniques": ["[+15]% Great Person generation [in this city]", "Must be next to [Fresh water]"],
+		"hurryCostModifier": 25,
+		"happiness": 1,
+		"culture": 2,
+		"maintenance": 1,
+		"requiredTech": "Calendar"
+	},
+	{
+		"name": "Patricians Stables",
+		"replaces": "Stable",
+		"uniqueTo": "Rome",
+		"maintenance": 1,
+		"production": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["[+15]% Production when constructing [Mounted] units [in this city]",
+			"[+1 Production] from [Cattle] tiles [in this city]",
+			"[+1 Production] from [Horses] tiles [in this city]",
+			"[+1 Production] from [Sheep] tiles [in this city]", "Provides [2] [Horses]"],
 		"requiredTech": "Horseback Riding"
 	},
 	{
-		"name": "Breeders",
-		"replaces": "Aqueduct",
-		"uniqueTo": "Aliens",
-		"cost": 80,
-		"hurryCostModifier": 160,
-		"happiness": 2,
-		"uniques": ["40% of food is carried over after a new citizen is born"],
-		"requiredTech": "Engineering"
-	}
+		"name": "Legion Armory",
+		"replaces": "Armory",
+		"uniqueTo": "Rome",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredBuilding": "Barracks",
+		"uniques": ["New [Military] units start with [20] XP [in this city]", "Destroyed when the city is captured"],
+		"requiredTech": "Iron Working"
+	},
 ]
