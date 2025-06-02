@@ -175,6 +175,7 @@
 	{
 		"name": "Merchant Vessel",
 		"unitType": "Civilian Water",
+		"uniqueTo": "Rome",
 		"movement": 3,
 		"cost": 300,
 		"requiredTech": "Sailing",
